@@ -1,15 +1,15 @@
-import Intro from '../pages/Intro.vue';
-import Trips from '../pages/Trips.vue';
+import IntroPage from '../pages/IntroPage.vue';
+import TripsPage from '../pages/TripsPage.vue';
 const routes = [
   {
     path: '/',
     name: 'intro',
-    component: Intro,
+    component: IntroPage,
   },
   {
     path: '/trips',
     name: 'trips',
-    component: Trips,
+    component: TripsPage,
   },
 
   // Always leave this as last one,

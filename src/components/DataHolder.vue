@@ -5,11 +5,11 @@
     <button @:click="upgrade">Upgrade!</button>
     <button @:click="downgrade">Downgrade</button>
     <input v-bind:name="name" 
-      @input="e => $emit('update:name', e.target.value)" />
+      @input="e => $emit('update:name', (e.target as HTMLInputElement).value)" />
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 import { ref } from 'vue';
 const props = defineProps({
   name: String,
@@ -29,9 +29,4 @@ function downgrade() {
 function showAuthor() {
   return 'Typescript' === lang.value ? 'Anders Hejlsberg' : 'Evan You'
 }
-
-function updateName(e) {
-  name.value = e.target.value
-}
-
 </script>

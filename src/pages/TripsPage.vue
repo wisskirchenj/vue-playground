@@ -20,7 +20,7 @@
         to="38 Linden Ave" 
     />
   </div>
-  <button @click="routeToIndex">Back</button>
+  <button @click="routeBack">Back</button>
 </template>
 
 <script setup>
@@ -28,7 +28,7 @@ import TripCard from '../components/TripCard.vue';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
-const routeToIndex = () => router.back();
+const routeBack = () => router.back();
 </script>
 
 <style>

@@ -6,7 +6,7 @@
  </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
 defineProps({
     driver: String,
     cost: Number,
