@@ -6,7 +6,6 @@
         <div class="trip-card">
           <h3>Trip {{ card.id }}</h3>
           <p>{{ card.from }} - {{ card.to }}</p>
-          <p>Driver: {{ card.driver }}</p>
           <p>Cost: {{ card.cost }}</p>
         </div>
       </template>
@@ -16,8 +15,8 @@
 </template>
 
 <script setup lang="ts">
-import Card from '../model/card-data'
-import TripsScopedCards from '../components/TripsScopedCards.vue'
+import { Card } from '@/model/card-data';
+import TripsScopedCards from '@/components/TripsScopedCards.vue'
 import { useRouter } from 'vue-router';
 
 const cards: Card[] = [

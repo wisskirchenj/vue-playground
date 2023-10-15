@@ -15,7 +15,6 @@ const props = defineProps({
   name: String,
   lang: String
 })
-defineEmits(['update:name'])
 
 const lang = ref(props.lang)
 const name = ref(props.name)

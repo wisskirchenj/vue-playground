@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import Card from '../model/card-data'
+import { Card } from '@/model/card-data';
 
 defineProps<{
   cards: Card[]

@@ -10,8 +10,8 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { Router, useRouter } from 'vue-router';
-import HelloWorld from '../components/HelloWorld.vue';
-import DataHolder from '../components/DataHolder.vue';
+import HelloWorld from '@/components/HelloWorld.vue';
+import DataHolder from '@/components/DataHolder.vue';
 
 const name = ref('Jürgen')
 const router: Router = useRouter();

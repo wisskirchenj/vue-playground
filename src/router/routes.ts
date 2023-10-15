@@ -1,6 +1,6 @@
-import IntroPage from '../pages/IntroPage.vue';
-import TripsPage from '../pages/TripsPage.vue';
-import TripsScopedSlotsPage from '../pages/TripsScopedSlotsPage.vue';
+import IntroPage from '@/pages/IntroPage.vue';
+import TripsPage from '@/pages/TripsPage.vue';
+import TripsScopedSlotsPage from '@/pages/TripsScopedSlotsPage.vue';
 const routes = [
   {
     path: '/',
@@ -22,7 +22,7 @@ const routes = [
   // but you can also remove it
   {
     path: '/:catchAll(.*)*',
-    component: () => import('../pages/ErrorNotFound.vue'),
+    component: () => import('@/pages/ErrorNotFound.vue'),
   },
 ];
 

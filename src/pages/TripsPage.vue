@@ -13,7 +13,7 @@
 </template>
 
 <script setup lang="ts">
-import TripCard from '../components/TripCard.vue';
+import TripCard from '@/components/TripCard.vue';
 import { useRouter } from 'vue-router';
 
 const router = useRouter();
