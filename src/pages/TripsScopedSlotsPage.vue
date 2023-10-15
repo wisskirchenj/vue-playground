@@ -2,12 +2,12 @@
   <div class="container">
     <h2>Scoped slot's trips</h2>
     <trips-scoped-cards :cards="cards">
-      <template v-slot:card="props">
+      <template v-slot:card="{ card }">
         <div class="trip-card">
-          <h3>Trip {{ props.card.id }}</h3>
-          <p>{{ props.card.from }} - {{ props.card.to }}</p>
-          <p>Driver: {{ props.card.driver }}</p>
-          <p>Cost: {{ props.card.cost }}</p>
+          <h3>Trip {{ card.id }}</h3>
+          <p>{{ card.from }} - {{ card.to }}</p>
+          <p>Driver: {{ card.driver }}</p>
+          <p>Cost: {{ card.cost }}</p>
         </div>
       </template>
     </trips-scoped-cards>
