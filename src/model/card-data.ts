@@ -1,4 +1,4 @@
-export default interface Card {
+export type Card = {
     id: string,
     driver: string,
     cost: number,
