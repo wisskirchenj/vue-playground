@@ -1,5 +1,6 @@
 import IntroPage from '../pages/IntroPage.vue';
 import TripsPage from '../pages/TripsPage.vue';
+import TripsScopedSlotsPage from '../pages/TripsScopedSlotsPage.vue';
 const routes = [
   {
     path: '/',
@@ -10,6 +11,11 @@ const routes = [
     path: '/trips',
     name: 'trips',
     component: TripsPage,
+  },
+  {
+    path: '/tripsscoped',
+    name: 'tripsscoped',
+    component: TripsScopedSlotsPage,
   },
 
   // Always leave this as last one,

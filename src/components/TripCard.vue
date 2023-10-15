@@ -1,15 +1,25 @@
 <template>
- <div class="trip-card">
-    <h3>Trip {{ from }} - {{ to }}</h3>
-    <p>Driver: {{ driver }}</p>
-    <p>Cost: {{ cost }}</p>
- </div>
+    <div class="trip-card">
+        <header class="red">
+            <slot name="header">
+            </slot>
+        </header>
+        <h3>Trip {{ from }} - {{ to }}</h3>
+        <p>Driver: {{ driver }}</p>
+        <p>Cost: {{ cost }}</p>
+    </div>
 </template>
 
 <script setup lang="ts">
 defineProps({
-    driver: String,
-    cost: Number,
+    driver: {
+        type: String,
+        default: 'Max'
+    },
+    cost: {
+        type: Number,
+        required: true
+    },
     from: String,
     to: String
 });
@@ -21,5 +31,8 @@ defineProps({
     padding: 10px;
     text-align: center;
     width: 400px
+}
+.red {
+    color : red;
 }
 </style>
