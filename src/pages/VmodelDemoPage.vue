@@ -1,8 +1,9 @@
 
 <template>
-    <base-input v-model="firstName" /><br />
+    <!-- <base-input v-model="firstName" /> <== works and uses modelValue (default) instead of name -->
+    <base-input v-model:name="firstName" />
     {{ firstName }}
-    <br />
+    <br /><br />
     <button @click="routeBack">Back</button>
 </template>
   
