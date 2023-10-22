@@ -1,6 +1,8 @@
 import IntroPage from '@/pages/IntroPage.vue';
 import TripsPage from '@/pages/TripsPage.vue';
 import TripsScopedSlotsPage from '@/pages/TripsScopedSlotsPage.vue';
+import VmodelDemoPage from '@/pages/VmodelDemoPage.vue';
+
 const routes = [
   {
     path: '/',
@@ -16,6 +18,11 @@ const routes = [
     path: '/tripsscoped',
     name: 'tripsscoped',
     component: TripsScopedSlotsPage,
+  },
+  {
+    path: '/vmodel',
+    name: 'vmodeldemo',
+    component: VmodelDemoPage,
   },
 
   // Always leave this as last one,
