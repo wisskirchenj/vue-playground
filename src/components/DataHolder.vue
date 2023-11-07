@@ -1,10 +1,10 @@
 <template>
   <div>
-    <h2>Hi, I'm {{ props.name }} and I'm toying around with {{ lang }}!</h2>
+    <h2>Hi, I'm {{ name }} and I'm toying around with {{ lang }}!</h2>
     <p>{{ lang }} was created by {{ showAuthor() }}!</p>
     <button @:click="upgrade">Upgrade!</button>
     <button @:click="downgrade">Downgrade</button>
-    <input v-bind:name="name" 
+    <input v-model="name" 
       @input="e => $emit('update:name', (e.target as HTMLInputElement).value)" />
   </div>
 </template>

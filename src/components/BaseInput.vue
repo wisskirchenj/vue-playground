@@ -11,5 +11,5 @@ defineProps<({
 })>();
 const emit = defineEmits<{
     'update:name': [val: string]
-}>()
+}>();
 </script>

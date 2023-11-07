@@ -35,6 +35,13 @@ const cards: Card[] = [
     to: '121 Main Street'
   }
 ]
+cards.unshift({
+  id: '0',
+  driver: 'Jürgen',
+  cost: 0,
+  from: 'Home',
+  to: 'Work'
+})
 
 const router = useRouter();
 const routeBack = () => router.back();

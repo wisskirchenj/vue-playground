@@ -2,6 +2,7 @@ import IntroPage from '@/pages/IntroPage.vue';
 import TripsPage from '@/pages/TripsPage.vue';
 import TripsScopedSlotsPage from '@/pages/TripsScopedSlotsPage.vue';
 import VmodelDemoPage from '@/pages/VmodelDemoPage.vue';
+import GetterSetter from '@/pages/GetterSetter.vue';
 
 const routes = [
   {
@@ -23,6 +24,11 @@ const routes = [
     path: '/vmodel',
     name: 'vmodeldemo',
     component: VmodelDemoPage,
+  },
+  {
+    path: '/getset',
+    name: 'getset',
+    component: GetterSetter,
   },
 
   // Always leave this as last one,
