@@ -6,13 +6,10 @@ import { createRouter, createWebHistory } from 'vue-router'
 // there is also createWebHashHistory and createMemoryHistory
 
 const router = createRouter({
-  history: createWebHistory(),
-  routes: routes,
+  history: createWebHistory(), // or other options... may be ommited
+  routes: routes, // defined in the routes.js file or elsewhere
 })
 
-const app = createApp(App)
-// Make sure to _use_ the router instance to make the
-// whole app router-aware.
-app.use(router)
-
-app.mount('#app')
+createApp(App)
+  .use(router)
+  .mount('#app')
